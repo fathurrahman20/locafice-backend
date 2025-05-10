@@ -33,8 +33,8 @@ class OfficeSpaceResource extends Resource
 
                 Forms\Components\FileUpload::make('thumbnail')
                 ->image()
-                    ->directory('office-space-thumbnail')
-                    ->disk('public')
+                ->directory('office-space-thumbnail')
+                ->disk('public')
                 ->required(),
 
                 Forms\Components\Textarea::make('about')
@@ -46,8 +46,8 @@ class OfficeSpaceResource extends Resource
                 ->relationship('photos')
                 ->schema([
                     Forms\Components\FileUpload::make('photo')
-                        ->directory('office-space-photo')
-                        ->disk('public')
+                    ->directory('office-space-photo')
+                    ->disk('public')
                     ->required()
                 ]),
 

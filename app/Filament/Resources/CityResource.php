@@ -30,6 +30,8 @@ class CityResource extends Resource
 
                 Forms\Components\FileUpload::make('photo')
                 ->image()
+                ->directory('city-photo')
+                ->disk('public')
                 ->required()
             ]);
     }
